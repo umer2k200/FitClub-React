@@ -1,0 +1,128 @@
+/* .Form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Form-container>span{
+    position: relative;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+    left: 22.5rem;
+    bottom: 6rem;
+
+}
+.feedback-form{
+    display: flex;
+    position: relative;
+    top:9rem;
+    right:10rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0;
+    background-color: gray;
+    padding: 1rem 2rem;
+    width: 50%;
+    margin-bottom: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-form>input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgrayz);
+}
+.feedback-form>input:hover{
+    cursor: pointer;
+}
+::placeholder{
+    color: var(--lightgray);
+}
+.btn-f{
+    background-color: var(--orange);
+    color: white;
+    width: 10rem;
+} */
+/* feedback.css */
+/* feedback.css */
+.Form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form-container > span {
+    position: relative;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+    bottom: 16rem;
+    left:22.5rem;
+}
+
+.feedback-form {
+    display: flex;
+    position: relative;
+    top: 9rem;
+    right: 10rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0;
+    background-color: var(--darkgray);
+    padding: 1rem 2rem;
+    width: 50%;
+    margin-bottom: 8rem;
+    justify-content: center;
+   
+}
+
+.feedback-form > label {
+    color: white;
+    font-weight: bold;
+}
+
+.feedback-form > input,
+.feedback-form > textarea {
+    background-color: gray;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 100%; /* Ensure inputs and textarea take full width */
+    padding: 0.5rem; /* Adjust padding for better appearance */
+     /* Align text to center */
+}
+
+.feedback-form > input:hover,
+.feedback-form > textarea:hover {
+    cursor: pointer;
+}
+
+.feedback-form > textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+::placeholder {
+    color: var(--darkgray);
+}
+
+.btn-f {
+    background-color: var(--orange);
+    color: white;
+    width: 10rem;
+    border-radius: 10px;
+}
+
+@media screen and (max-width : 768px){
+    .Form-container>span{
+        position: relative;
+        font-size: 3rem;
+        bottom: 16rem;
+        left:7.5rem;
+    }
+    .feedback-form{
+        right:8.5rem
+    }
+}

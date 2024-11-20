@@ -1,0 +1,90 @@
+.Form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 3rem;
+}
+
+.Form-container > span {
+    position: relative;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bold;
+    bottom: 20rem;
+    left:23rem;
+}
+
+.joinuser-form {
+    display: flex;
+    position: relative;
+    top: 7rem;
+    right: 8rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0;
+    background-color: var(--darkgray);
+    padding: 1rem 2rem;
+    width: 50%;
+    margin-bottom: 8rem;
+    justify-content: center;
+   
+}
+
+.joinuser-form > label {
+    color: white;
+    font-weight: bold;
+}
+
+.joinuser-form > input,
+.joinuser-form > textarea {
+    background-color: gray;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 100%; /* Ensure inputs and textarea take full width */
+    padding: 0.5rem; /* Adjust padding for better appearance */
+     /* Align text to center */
+}
+
+.joinuser-form > input:hover,
+.joinuser-form > textarea:hover {
+    cursor: pointer;
+}
+
+.joinuser-form > textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+::placeholder {
+    color: var(--darkgray);
+}
+
+.btn-f {
+    background-color: var(--orange);
+    color: white;
+    width: 10rem;
+    border-radius: 10px;
+}
+.btn-back{
+    background-color: var(--orange);
+    color: white;
+    width:6rem;
+    border-radius: 10px;
+    flex-direction: flex;
+    position: relative;
+    bottom: 20rem;
+    left:2rem;
+}
+
+@media screen and (max-width : 768px){
+    .Form-container>span{
+        position: relative;
+        font-size: 3rem;
+        bottom: 16rem;
+        left:7.5rem;
+    }
+    .joinuser-form{
+        right:8.5rem
+    }
+}
